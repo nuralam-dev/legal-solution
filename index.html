@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LEGAL SOLUTION</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- daisy ui CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -16,6 +24,10 @@
         background-color: rgba(182, 140, 90, 1);
         color: white;
       }
+
+      .eb-garamond {
+        font-family: "EB Garamond", serif;
+      }
     </style>
   </head>
   <body>
@@ -23,7 +35,7 @@
     <header class="md:container mx-auto">
       <!-- nav section -->
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 mt-5">
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -57,25 +69,25 @@
       </nav>
       <!-- hero section -->
       <div
-        class="hero rounded-xl"
+        class="hero rounded-xl "
         style="background-image: url(./images/banner.png)"
-       >
-        <div></div>
-        <div class="hero-content text-neutral-content text-center">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">
-              We Provide Effective Legal Solutions
+      >
+        <div class=" text-neutral-content text-center p-10">
+          <div class="m-28">
+            <h1 class=" text-7xl eb-garamond font-bold">
+              We Provide Effective <br />
+              Legal Solutions
             </h1>
-            <p class="mb-5 text-gray-600">
+            <p class="mb-5 text-base">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour.
             </p>
-            <div class="flex gap-4">
+            <div class="flex gap-4 mt-8">
               <input
                 type="text"
                 placeholder="Search your services"
-                class="input"
+                class="input text-gray-400"
               />
               <button class="btn btn-class">Get Started</button>
             </div>
